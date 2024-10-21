@@ -43,6 +43,9 @@ options = {
 
 # Función para mostrar el gráfico seleccionado
 def show_plot(option):
+    # Asegúrate de que la columna 'Date' esté en formato datetime
+    df_cleaned['Date'] = pd.to_datetime(df_cleaned['Date'], errors='coerce')
+    
     if option == 'Distribución de Rangos de Edad':
         bins = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
         labels = ['0-10', '11-20', '21-30', '31-40', '41-50', '51-60', '61-70', '71-80', '81-90', '91-100']
