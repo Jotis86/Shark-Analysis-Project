@@ -180,10 +180,33 @@ for option, selected in options.items():
 # Conclusiones finales del análisis
 st.subheader('Conclusiones finales del análisis')
 st.write("""
-- **Edad**: el rango de edad más afectado por los ataques de tiburones es el de 21-30 años. Esto probablemente se deba a que este grupo de edad participa en más actividades acuáticas.
-- **Género**: el 87.2% de los ataques de tiburones son a hombres, lo que los convierte en el grupo con mayor riesgo.
-- **Actividades de Mayor Riesgo**: las actividades con mayor riesgo de ataques de tiburones son el surf, seguido de la natación y la pesca.
-- **Frecuencia de Ataques por Océano**: los océanos con más ataques de tiburones son el Océano Pacífico, el Océano Atlántico y el Océano Índico.
-- **Distribución Temporal de los Ataques**: la mayoría de los ataques de tiburones ocurren en la tarde, seguidos por la mañana y finalmente por la noche.
-- **Países**: los países con más ataques de tiburones son Estados Unidos, Australia y Sudáfrica, probablemente debido a la mayor prevalencia de actividades como el surf y la natación en estas regiones.
+- **Edad**: el rango de edad más afectado por los ataques de tiburones es el de 21-30 años. Esto probablemente se deba a que este grupo de edad participa en más actividades acuáticas. 🏄‍♂️
+- **Género**: el 87.2% de los ataques de tiburones son a hombres, lo que los convierte en el grupo con mayor riesgo. 👨
+- **Actividades de Mayor Riesgo**: las actividades con mayor riesgo de ataques de tiburones son el surf 🏄‍♂️, seguido de la natación 🏊‍♂️ y la pesca 🎣.
+- **Frecuencia de Ataques por Océano**: los océanos con más ataques de tiburones son el Océano Pacífico 🌊, el Océano Atlántico 🌊 y el Océano Índico 🌊.
+- **Distribución Temporal de los Ataques**: la mayoría de los ataques de tiburones ocurren en la tarde 🌅, seguidos por la mañana 🌄 y finalmente por la noche 🌃.
+- **Países**: los países con más ataques de tiburones son Estados Unidos 🇺🇸, Australia 🇦🇺 y Sudáfrica 🇿🇦, probablemente debido a la mayor prevalencia de actividades como el surf y la natación en estas regiones.
+""")
+
+
+# Sección de recomendaciones
+st.subheader('Recomendaciones')
+st.write("""
+Basado en el análisis, se proponen las siguientes recomendaciones:
+
+1. **Aumentar la Conciencia y las Medidas de Seguridad**: 
+   - 📢 Dirigir información y pautas de seguridad a grupos de alto riesgo, como surfistas y nadadores.
+   - 🦈 Implementar y promover el uso de dispositivos de disuasión de tiburones en áreas de alto riesgo.
+
+2. **Precauciones Estacionales y Basadas en el Tiempo**: 
+   - 📅 Aumentar la vigilancia y las medidas de seguridad durante los meses de mayor incidencia de ataques (julio, enero, agosto y septiembre) y las horas del día (por la tarde).
+   - 🚫 Alentar a los bañistas a evitar nadar durante los momentos de alto riesgo.
+
+3. **Enfoque Geográfico**: 
+   - 🌍 Enfocar las campañas de seguridad y los recursos en las regiones con el mayor número de ataques, como América del Norte, Oceanía y África.
+   - 🤝 Colaborar con las autoridades locales en estas regiones para mejorar la vigilancia y las estrategias de respuesta ante tiburones.
+
+4. **Investigación Adicional**: 
+   - 🔬 Realizar más estudios para comprender los factores subyacentes que contribuyen al alto número de ataques en regiones y actividades específicas.
+   - 🌐 Explorar el impacto de los cambios ambientales en el comportamiento de los tiburones y los patrones de ataque.
 """)
