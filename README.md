@@ -65,7 +65,7 @@ For a detailed summary of the data analysis, including visualizations and key in
 
 ## Streamlit App 🌐
 
-We have developed a Streamlit web application to visualize the shark attack data interactively. The app includes various charts and insights derived from the data analysis. You can see it [HERE](https://shark-analysis-project-f793m3tmupmmyue6hxtzoh.streamlit.app/)
+We have developed a Streamlit web application to visualize the shark attack data interactively. The app includes various charts and insights derived from the data analysis. You can see it [HERE](https://shark-analysis-project-zqkurirjbyuphhtn5sibnw.streamlit.app/)
 
 ### App Features
 
