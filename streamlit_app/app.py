@@ -184,7 +184,7 @@ for option, selected in options.items():
 st.subheader('Conclusiones finales del análisis')
 st.write("""
 - **Edad**: el rango de edad más afectado por los ataques de tiburones es el de 21-30 años. Esto probablemente se deba a que este grupo de edad participa en más actividades acuáticas. 🏄‍♂️
-- **Género**: el 87.2% de los ataques de tiburones son a hombres, lo que los convierte en el grupo con mayor riesgo. 👨
+- **Género**: el 86.5% de los ataques de tiburones son a hombres, lo que los convierte en el grupo con mayor riesgo. 👨
 - **Actividades de Mayor Riesgo**: las actividades con mayor riesgo de ataques de tiburones son el surf 🏄‍♂️, seguido de la natación 🏊‍♂️ y la pesca 🎣.
 - **Frecuencia de Ataques por Océano**: los océanos con más ataques de tiburones son el Océano Pacífico 🌊, el Océano Atlántico 🌊 y el Océano Índico 🌊.
 - **Distribución Temporal de los Ataques**: la mayoría de los ataques de tiburones ocurren en la tarde 🌅, seguidos por la mañana 🌄 y finalmente por la noche 🌃.
