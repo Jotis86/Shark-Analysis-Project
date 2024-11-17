@@ -4,6 +4,12 @@
   <img src="https://github.com/GemaVNZ/Quest2.-Sharks/blob/main/assets/Shark.gif" alt="Descripción del GIF" width="700">
 </p>
 
+![Commits](https://img.shields.io/github/commit-activity/m/Jotis86/Shark-Analysis-Project)
+![Issues Abiertas](https://img.shields.io/github/issues/Jotis86/Shark-Analysis-Project)
+![Pull Requests](https://img.shields.io/github/issues-pr/Jotis86/Shark-Analysis-Project)
+![Forks](https://img.shields.io/github/forks/Jotis86/Shark-Analysis-Project)
+![Tamaño del Repositorio](https://img.shields.io/github/repo-size/Jotis86/Shark-Analysis-Project)
+
 ## Objective 🎯
 
 The main objective of this project is to analyze and visualize shark attack data to gain insights into patterns and trends. 📊
