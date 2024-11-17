@@ -101,3 +101,21 @@ The project findings were presented in a detailed canva presentation, which incl
 
 We welcome collaborations and suggestions to improve this project. Feel free to open an issue or submit a pull request on GitHub. 🐙
 
+If you have any ideas, improvements, or new features that you would like to see in this project, we would love to hear from you. Collaboration is key to making this project better and more useful for everyone. Here are a few ways you can contribute:
+
+- **Report Issues**: If you find any bugs or issues, please report them by opening an issue on GitHub.
+- **Suggest Enhancements**: Have an idea for a new feature or improvement? Open an issue to discuss it.
+- **Submit Pull Requests**: If you have a fix or a new feature, feel free to fork the repository and submit a pull request.
+- **Spread the Word**: Share this project with others who might find it useful.
+
+## Contact 📬
+
+If you have any questions or would like to get in touch, you can reach me via email or LinkedIn:
+
+- **Email**: [jotaduranbon@gmail.com](mailto:jotaduranbon@gmail.com)
+- **LinkedIn**: [Juan Duran Bon](https://www.linkedin.com/in/juan-duran-bon)
+
+We look forward to your contributions and feedback!
+
+Happy coding! ❤️
+
