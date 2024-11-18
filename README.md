@@ -9,6 +9,8 @@
 ![Pull Requests](https://img.shields.io/github/issues-pr/Jotis86/Shark-Analysis-Project)
 ![Forks](https://img.shields.io/github/forks/Jotis86/Shark-Analysis-Project)
 ![Tamaño del Repositorio](https://img.shields.io/github/repo-size/Jotis86/Shark-Analysis-Project)
+![Licencia](https://img.shields.io/github/license/Jotis86/Shark-Analysis-Project)
+![Autor](https://img.shields.io/badge/autor-Juan%20Duran%20Bon-blue)
 
 ## Objective 🎯
 
@@ -88,13 +90,11 @@ The project findings were presented in a detailed canva presentation, which incl
 
 ## Project Members 👥
 
-| Name       | GitHub Profile                           |
-|------------|------------------------------------------|
-| **Bruno** | [GitHub Profile](https://github.com/member1) |
+| Name              | GitHub Profile                           |
+|-------------------|------------------------------------------|
 | **Carlota Gordillo** | [GitHub Profile](https://github.com/carlotagordillo2) |
-| **Gema Villena** | [GitHub Profile](https://github.com/GemaVNZ) |
-| **Juan Duran** | [GitHub Profile](https://github.com/Jotis86) |
-| **Rocio Romo** | [GitHub Profile](https://github.com/member5) |
+| **Gema Villena**     | [GitHub Profile](https://github.com/GemaVNZ) |
+| **Juan Duran**       | [GitHub Profile](https://github.com/Jotis86) |
 
 
 ## Collaborations and Suggestions 🤝
@@ -116,6 +116,10 @@ If you have any questions or would like to get in touch, you can reach me via em
 - **LinkedIn**: [Juan Duran Bon](https://www.linkedin.com/in/juan-duran-bon)
 
 We look forward to your contributions and feedback!
+
+## License 📄
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 Happy coding! ❤️
 
