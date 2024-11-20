@@ -20,7 +20,8 @@ Esta aplicación muestra los gráficos y conclusiones del análisis de datos de 
 """)
 
 # Menú de navegación
-menu = st.sidebar.selectbox('Menú', ['Objetivos del Proyecto', 'Proceso de Desarrollo', 'Visualizaciones', 'Conclusiones Finales', 'Recomendaciones'])
+st.sidebar.title('Menú de Navegación')
+menu = st.sidebar.radio('Selecciona una sección:', ['Objetivos del Proyecto', 'Proceso de Desarrollo', 'Visualizaciones', 'Conclusiones Finales', 'Recomendaciones'])
 
 if menu == 'Objetivos del Proyecto':
     st.header('Objetivos del Proyecto 🎯')
@@ -55,11 +56,14 @@ elif menu == 'Visualizaciones':
         'Distribución de Ataques por Continente': 'continent.png'
     }
 
-    selected_option = st.sidebar.selectbox('Selecciona un gráfico', list(options.keys()))
+    selected_option = st.sidebar.radio('Selecciona un gráfico', list(options.keys()))
 
     if selected_option:
         image_path = os.path.join(os.path.dirname(__file__), 'images', options[selected_option])
-        st.image(image_path, caption=selected_option)
+        if os.path.exists(image_path):
+            st.image(image_path, caption=selected_option)
+        else:
+            st.error(f"No se pudo encontrar la imagen: {image_path}")
 
 elif menu == 'Conclusiones Finales':
     st.header('Conclusiones Finales 📊')
