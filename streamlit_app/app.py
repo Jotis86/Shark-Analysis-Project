@@ -19,8 +19,20 @@ st.write("""
 Esta aplicación muestra los gráficos y conclusiones del análisis de datos de tiburones.
 """)
 
+# Añadir imagen a la página principal
+main_image_path = os.path.join(os.path.dirname(__file__), 'images', 'tiburon.png')
+if os.path.exists(main_image_path):
+    st.image(main_image_path, caption='Análisis de Datos de Tiburones')
+
 # Menú de navegación
 st.sidebar.title('Menú de Navegación')
+
+# Añadir imagen al menú de la izquierda
+sidebar_image_path = os.path.join(os.path.dirname(__file__), 'images', 'nemo.png')
+if os.path.exists(sidebar_image_path):
+    st.sidebar.image(sidebar_image_path, caption='Menú de Navegación')
+
+
 menu = st.sidebar.radio('Selecciona una sección:', ['Objetivos del Proyecto', 'Proceso de Desarrollo', 'Visualizaciones', 'Conclusiones Finales', 'Recomendaciones'])
 
 if menu == 'Objetivos del Proyecto':
