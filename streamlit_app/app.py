@@ -27,16 +27,52 @@ if menu == 'Objetivos del Proyecto':
     st.header('Objetivos del Proyecto 🎯')
     st.write("""
     El objetivo principal de este proyecto es analizar y visualizar datos de ataques de tiburones para obtener información sobre patrones y tendencias. 📊
+    
+    ### Sub-objetivos:
+    1. **Identificación de Patrones Temporales**: Analizar cómo varían los ataques de tiburones a lo largo del tiempo, incluyendo variaciones estacionales y diurnas.
+    2. **Análisis Geográfico**: Determinar las regiones con mayor incidencia de ataques de tiburones y explorar posibles factores geográficos que contribuyan a estos patrones.
+    3. **Perfil de las Víctimas**: Examinar las características demográficas de las víctimas, como la edad y el género, para identificar grupos de alto riesgo.
+    4. **Actividades de Riesgo**: Identificar las actividades que presentan un mayor riesgo de ataques de tiburones y proporcionar recomendaciones para mitigar estos riesgos.
+    5. **Especies de Tiburones**: Analizar las especies de tiburones más comunes en los ataques y explorar sus comportamientos y hábitats.
+    6. **Impacto de Factores Ambientales**: Investigar cómo factores ambientales, como la temperatura del agua y la presencia de presas, influyen en la frecuencia y ubicación de los ataques de tiburones.
+    7. **Desarrollo de Herramientas de Visualización**: Crear visualizaciones interactivas que permitan a los usuarios explorar los datos y descubrir patrones por sí mismos.
+    8. **Generación de Informes y Recomendaciones**: Compilar los hallazgos en informes detallados y proporcionar recomendaciones basadas en los datos para mejorar la seguridad en el agua.
+
+    Estos objetivos nos permitirán comprender mejor los ataques de tiburones y desarrollar estrategias efectivas para reducir su incidencia y mejorar la seguridad de las personas en el agua.
     """)
 
 elif menu == 'Proceso de Desarrollo':
     st.header('Proceso de Desarrollo 🚀')
     st.write("""
-    1. 📥 **Recolección de Datos**: Reunir datos en bruto.
-    2. 🧹 **Limpieza de Datos**: Usar Jupyter Notebooks para limpiar y preprocesar los datos.
-    3. 🔍 **Análisis de Datos**: Analizar los datos limpios para extraer información significativa.
-    4. 📊 **Visualización de Datos**: Crear visualizaciones para representar los hallazgos.
-    5. 📝 **Reporte**: Compilar los resultados en informes y presentaciones.
+    El proceso de desarrollo de este proyecto se llevó a cabo en varias etapas, cada una de las cuales fue crucial para alcanzar los objetivos establecidos. A continuación se describen las etapas principales del proceso:
+
+    ### 1. Recolección de Datos 📥
+    - **Fuentes de Datos**: Se recopilaron datos de diversas fuentes, incluyendo bases de datos públicas, informes de incidentes y registros históricos.
+    - **Formato de los Datos**: Los datos se obtuvieron en diferentes formatos, como archivos CSV, bases de datos SQL y APIs.
+    - **Almacenamiento de Datos**: Los datos recopilados se almacenaron en un repositorio centralizado para facilitar su acceso y análisis.
+
+    ### 2. Limpieza de Datos 🧹
+    - **Eliminación de Duplicados**: Se eliminaron registros duplicados para asegurar la integridad de los datos.
+    - **Manejo de Valores Faltantes**: Se abordaron los valores faltantes mediante técnicas como la imputación y la eliminación de registros incompletos.
+    - **Normalización de Datos**: Se estandarizaron las unidades de medida y los formatos de fecha para asegurar la consistencia de los datos.
+    - **Verificación de Calidad**: Se realizaron verificaciones de calidad para identificar y corregir errores en los datos.
+
+    ### 3. Análisis de Datos 🔍
+    - **Exploración de Datos**: Se realizó un análisis exploratorio de los datos para identificar patrones y tendencias iniciales.
+    - **Análisis Estadístico**: Se aplicaron técnicas estadísticas para cuantificar las relaciones entre diferentes variables.
+    - **Modelado Predictivo**: Se desarrollaron modelos predictivos para anticipar la probabilidad de ataques de tiburones en diferentes condiciones.
+
+    ### 4. Visualización de Datos 📊
+    - **Gráficos Interactivos**: Se crearon gráficos interactivos utilizando herramientas como Matplotlib y Seaborn para facilitar la exploración de los datos.
+    - **Dashboards**: Se desarrollaron dashboards interactivos con Streamlit para permitir a los usuarios visualizar y analizar los datos de manera intuitiva.
+    - **Mapas Geoespaciales**: Se utilizaron herramientas de mapeo geoespacial para visualizar la distribución geográfica de los ataques de tiburones.
+
+    ### 5. Reporte 📝
+    - **Documentación de Resultados**: Se documentaron los hallazgos del análisis de datos en informes detallados.
+    - **Presentaciones**: Se prepararon presentaciones para comunicar los resultados a diferentes audiencias, incluyendo investigadores, autoridades y el público en general.
+    - **Recomendaciones**: Se proporcionaron recomendaciones basadas en los datos para mejorar la seguridad en el agua y reducir la incidencia de ataques de tiburones.
+
+    Este proceso de desarrollo estructurado nos permitió abordar de manera efectiva los objetivos del proyecto y generar información valiosa sobre los ataques de tiburones.
     """)
 
 elif menu == 'Visualizaciones':
