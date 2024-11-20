@@ -32,6 +32,10 @@ sidebar_image_path = os.path.join(os.path.dirname(__file__), 'images', 'nemo.png
 if os.path.exists(sidebar_image_path):
     st.sidebar.image(sidebar_image_path, caption='Menú de Navegación')
 
+# Botón para ir al repositorio de GitHub
+if st.sidebar.button('Ir al repositorio de GitHub'):
+    st.sidebar.markdown('[Repositorio de GitHub](https://github.com/Jotis86/Shark-Analysis-Project)')
+
 
 menu = st.sidebar.radio('Selecciona una sección:', ['Objetivos del Proyecto', 'Proceso de Desarrollo', 'Visualizaciones', 'Conclusiones Finales', 'Recomendaciones'])
 
