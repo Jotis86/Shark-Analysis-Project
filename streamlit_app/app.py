@@ -120,8 +120,8 @@ elif menu == 'Power BI':
     st.write("Below are some Power BI visualizations related to the shark data analysis.")
     
     # Add Power BI images
-    power_bi_image1_path = os.path.join(os.path.dirname(__file__), 'images', 'power_bi_image1.png')
-    power_bi_image2_path = os.path.join(os.path.dirname(__file__), 'images', 'power_bi_image2.png')
+    power_bi_image1_path = os.path.join(os.path.dirname(__file__), 'images', 'picture_1.png')
+    power_bi_image2_path = os.path.join(os.path.dirname(__file__), 'images', 'picture_2.png')
     
     if os.path.exists(power_bi_image1_path):
         st.image(power_bi_image1_path, caption='Power BI Visualization 1')
