@@ -2,149 +2,168 @@ import streamlit as st
 import pandas as pd
 import os
 
-# Cargar los datos
+# Load data
 @st.cache_data
 def load_data():
-    # Usar una ruta relativa
+    # Use a relative path
     file_path = os.path.join(os.path.dirname(__file__), '..', 'notebooks', 'cleaned_data.csv')
     return pd.read_csv(file_path)
 
 df_cleaned = load_data()
 
-# Título de la aplicación
-st.title('Análisis de Datos de Tiburones')
+# Application title
+st.title('Shark Data Analysis')
 
-# Descripción
+# Description
 st.write("""
-Esta aplicación muestra los gráficos y conclusiones del análisis de datos de tiburones.
+This application displays the charts and conclusions of the shark data analysis.
 """)
 
-# Añadir imagen a la página principal
+# Add image to the main page
 main_image_path = os.path.join(os.path.dirname(__file__), 'images', 'tiburon.png')
 if os.path.exists(main_image_path):
-    st.image(main_image_path, caption='Análisis de Datos de Tiburones')
+    st.image(main_image_path, caption='Shark Data Analysis')
 
-# Menú de navegación
-st.sidebar.title('Menú de Navegación')
+# Navigation menu
+st.sidebar.title('Navigation Menu')
 
-# Añadir imagen al menú de la izquierda
+# Add image to the sidebar
 sidebar_image_path = os.path.join(os.path.dirname(__file__), 'images', 'nemo.png')
 if os.path.exists(sidebar_image_path):
-    st.sidebar.image(sidebar_image_path, caption='Menú de Navegación')
+    st.sidebar.image(sidebar_image_path, caption='Navigation Menu')
 
-# Botón para ir al repositorio de GitHub
-st.sidebar.markdown("[Ir al repositorio de GitHub](https://github.com/Jotis86/Shark-Analysis-Project)")
+# Button to go to the GitHub repository
+st.sidebar.markdown("[Go to GitHub Repository](https://github.com/Jotis86/Shark-Analysis-Project)")
 
+menu = st.sidebar.radio('Select a section:', ['Project Objectives', 'Development Process', 'Visualizations', 'Final Conclusions', 'Recommendations', 'Power BI'])
 
-menu = st.sidebar.radio('Selecciona una sección:', ['Objetivos del Proyecto', 'Proceso de Desarrollo', 'Visualizaciones', 'Conclusiones Finales', 'Recomendaciones'])
-
-if menu == 'Objetivos del Proyecto':
-    st.header('Objetivos del Proyecto 🎯')
+if menu == 'Project Objectives':
+    st.header('Project Objectives 🎯')
     st.write("""
-    El objetivo principal de este proyecto es analizar y visualizar datos de ataques de tiburones para obtener información sobre patrones y tendencias. 📊
+    The main objective of this project is to analyze and visualize shark attack data to gain insights into patterns and trends. 📊
     
-    ### Sub-objetivos:
-    1. **Identificación de Patrones Temporales**: Analizar cómo varían los ataques de tiburones a lo largo del tiempo, incluyendo variaciones estacionales y diurnas.
-    2. **Análisis Geográfico**: Determinar las regiones con mayor incidencia de ataques de tiburones y explorar posibles factores geográficos que contribuyan a estos patrones.
-    3. **Perfil de las Víctimas**: Examinar las características demográficas de las víctimas, como la edad y el género, para identificar grupos de alto riesgo.
-    4. **Actividades de Riesgo**: Identificar las actividades que presentan un mayor riesgo de ataques de tiburones y proporcionar recomendaciones para mitigar estos riesgos.
-    5. **Especies de Tiburones**: Analizar las especies de tiburones más comunes en los ataques y explorar sus comportamientos y hábitats.
-    6. **Impacto de Factores Ambientales**: Investigar cómo factores ambientales, como la temperatura del agua y la presencia de presas, influyen en la frecuencia y ubicación de los ataques de tiburones.
-    7. **Desarrollo de Herramientas de Visualización**: Crear visualizaciones interactivas que permitan a los usuarios explorar los datos y descubrir patrones por sí mismos.
-    8. **Generación de Informes y Recomendaciones**: Compilar los hallazgos en informes detallados y proporcionar recomendaciones basadas en los datos para mejorar la seguridad en el agua.
+    1. **Identification of Temporal Patterns**: Analyze how shark attacks vary over time, including seasonal and diurnal variations.
+    2. **Geographic Analysis**: Determine the regions with the highest incidence of shark attacks and explore possible geographic factors contributing to these patterns.
+    3. **Victim Profile**: Examine the demographic characteristics of the victims, such as age and gender, to identify high-risk groups.
+    4. **Risk Activities**: Identify activities that present a higher risk of shark attacks and provide recommendations to mitigate these risks.
+    5. **Shark Species**: Analyze the most common shark species in attacks and explore their behaviors and habitats.
+    6. **Impact of Environmental Factors**: Investigate how environmental factors, such as water temperature and prey presence, influence the frequency and location of shark attacks.
+    7. **Development of Visualization Tools**: Create interactive visualizations that allow users to explore the data and discover patterns themselves.
+    8. **Generation of Reports and Recommendations**: Compile the findings into detailed reports and provide data-driven recommendations to improve water safety.
 
-    Estos objetivos nos permitirán comprender mejor los ataques de tiburones y desarrollar estrategias efectivas para reducir su incidencia y mejorar la seguridad de las personas en el agua.
+    These objectives will allow us to better understand shark attacks and develop effective strategies to reduce their incidence and improve people's safety in the water.
     """)
 
-elif menu == 'Proceso de Desarrollo':
-    st.header('Proceso de Desarrollo 🚀')
+elif menu == 'Development Process':
+    st.header('Development Process 🚀')
     st.write("""
-    El proceso de desarrollo de este proyecto se llevó a cabo en varias etapas, cada una de las cuales fue crucial para alcanzar los objetivos establecidos. A continuación se describen las etapas principales del proceso:
+    The development process of this project was carried out in several stages, each of which was crucial to achieving the established objectives. The main stages of the process are described below:
 
-    ### 1. Recolección de Datos 📥
-    - **Fuentes de Datos**: Se recopilaron datos de diversas fuentes, incluyendo bases de datos públicas, informes de incidentes y registros históricos.
-    - **Formato de los Datos**: Los datos se obtuvieron en diferentes formatos, como archivos CSV, bases de datos SQL y APIs.
-    - **Almacenamiento de Datos**: Los datos recopilados se almacenaron en un repositorio centralizado para facilitar su acceso y análisis.
+    ### 1. Data Collection 📥
+    - **Data Sources**: Data was collected from various sources, including public databases, incident reports, and historical records.
+    - **Data Formats**: Data was obtained in different formats, such as CSV files, SQL databases, and APIs.
+    - **Data Storage**: Collected data was stored in a centralized repository to facilitate access and analysis.
 
-    ### 2. Limpieza de Datos 🧹
-    - **Eliminación de Duplicados**: Se eliminaron registros duplicados para asegurar la integridad de los datos.
-    - **Manejo de Valores Faltantes**: Se abordaron los valores faltantes mediante técnicas como la imputación y la eliminación de registros incompletos.
-    - **Normalización de Datos**: Se estandarizaron las unidades de medida y los formatos de fecha para asegurar la consistencia de los datos.
-    - **Verificación de Calidad**: Se realizaron verificaciones de calidad para identificar y corregir errores en los datos.
+    ### 2. Data Cleaning 🧹
+    - **Duplicate Removal**: Duplicate records were removed to ensure data integrity.
+    - **Handling Missing Values**: Missing values were addressed using techniques such as imputation and removal of incomplete records.
+    - **Data Normalization**: Units of measurement and date formats were standardized to ensure data consistency.
+    - **Quality Verification**: Quality checks were performed to identify and correct errors in the data.
 
-    ### 3. Análisis de Datos 🔍
-    - **Exploración de Datos**: Se realizó un análisis exploratorio de los datos para identificar patrones y tendencias iniciales.
-    - **Análisis Estadístico**: Se aplicaron técnicas estadísticas para cuantificar las relaciones entre diferentes variables.
-    - **Modelado Predictivo**: Se desarrollaron modelos predictivos para anticipar la probabilidad de ataques de tiburones en diferentes condiciones.
+    ### 3. Data Analysis 🔍
+    - **Data Exploration**: An exploratory data analysis was conducted to identify initial patterns and trends.
+    - **Statistical Analysis**: Statistical techniques were applied to quantify relationships between different variables.
+    - **Predictive Modeling**: Predictive models were developed to anticipate the likelihood of shark attacks under different conditions.
 
-    ### 4. Visualización de Datos 📊
-    - **Gráficos Interactivos**: Se crearon gráficos interactivos utilizando herramientas como Matplotlib y Seaborn para facilitar la exploración de los datos.
-    - **Dashboards**: Se desarrollaron dashboards interactivos con Streamlit para permitir a los usuarios visualizar y analizar los datos de manera intuitiva.
-    - **Mapas Geoespaciales**: Se utilizaron herramientas de mapeo geoespacial para visualizar la distribución geográfica de los ataques de tiburones.
+    ### 4. Data Visualization 📊
+    - **Interactive Charts**: Interactive charts were created using tools like Matplotlib and Seaborn to facilitate data exploration.
+    - **Dashboards**: Interactive dashboards were developed with Streamlit to allow users to visualize and analyze data intuitively.
+    - **Geospatial Maps**: Geospatial mapping tools were used to visualize the geographic distribution of shark attacks.
 
-    ### 5. Reporte 📝
-    - **Documentación de Resultados**: Se documentaron los hallazgos del análisis de datos en informes detallados.
-    - **Presentaciones**: Se prepararon presentaciones para comunicar los resultados a diferentes audiencias, incluyendo investigadores, autoridades y el público en general.
-    - **Recomendaciones**: Se proporcionaron recomendaciones basadas en los datos para mejorar la seguridad en el agua y reducir la incidencia de ataques de tiburones.
+    ### 5. Reporting 📝
+    - **Documentation of Results**: The findings of the data analysis were documented in detailed reports.
+    - **Presentations**: Presentations were prepared to communicate the results to different audiences, including researchers, authorities, and the general public.
+    - **Recommendations**: Recommendations based on the data were provided to improve water safety and reduce the incidence of shark attacks.
 
-    Este proceso de desarrollo estructurado nos permitió abordar de manera efectiva los objetivos del proyecto y generar información valiosa sobre los ataques de tiburones.
+    This structured development process allowed us to effectively address the project's objectives and generate valuable insights into shark attacks.
     """)
 
-elif menu == 'Visualizaciones':
-    st.header('Visualizaciones 📊')
-    st.write("Selecciona un gráfico del menú de la izquierda para visualizarlo.")
+elif menu == 'Visualizations':
+    st.header('Visualizations 📊')
+    st.write("Select a chart from the menu on the left to view it.")
     
-    # Menú de selección de gráficos
+    # Chart selection menu
     options = {
-        'Distribución de Rangos de Edad': 'age.png',
-        'Distribución por Sexo': 'sex.png',
-        'Top 5 Actividades con Más Ataques': 'activities.png',
-        'Top 10 Tipos de Tiburones Más Comunes': 'sharks.png',
-        'Frecuencia de Océanos y Mares': 'ocean.png',
-        'Distribución por Tiempo': 'time.png',
-        'Distribución de Ataques por Mes': 'month.png',
-        'Número de Ataques en los Últimos 10 Años': 'years.png',
-        'Distribución de Ataques por Continente': 'continent.png'
+        'Age Range Distribution': 'age.png',
+        'Gender Distribution': 'sex.png',
+        'Top 5 Activities with Most Attacks': 'activities.png',
+        'Top 10 Most Common Shark Types': 'sharks.png',
+        'Frequency of Oceans and Seas': 'ocean.png',
+        'Time Distribution': 'time.png',
+        'Monthly Attack Distribution': 'month.png',
+        'Number of Attacks in the Last 10 Years': 'years.png',
+        'Continent Attack Distribution': 'continent.png'
     }
 
-    selected_option = st.sidebar.radio('Selecciona un gráfico', list(options.keys()))
+    selected_option = st.sidebar.radio('Select a chart', list(options.keys()))
 
     if selected_option:
         image_path = os.path.join(os.path.dirname(__file__), 'images', options[selected_option])
         if os.path.exists(image_path):
             st.image(image_path, caption=selected_option)
         else:
-            st.error(f"No se pudo encontrar la imagen: {image_path}")
+            st.error(f"Could not find the image: {image_path}")
 
-elif menu == 'Conclusiones Finales':
-    st.header('Conclusiones Finales 📊')
+elif menu == 'Final Conclusions':
+    st.header('Final Conclusions 📊')
     st.write("""
-    - **Edad**: el rango de edad más afectado por los ataques de tiburones es el de 21-30 años. Esto probablemente se deba a que este grupo de edad participa en más actividades acuáticas. 🏄‍♂️
-    - **Género**: el 86.5% de los ataques de tiburones son a hombres, lo que los convierte en el grupo con mayor riesgo. 👨
-    - **Actividades de Mayor Riesgo**: las actividades con mayor riesgo de ataques de tiburones son el surf 🏄‍♂️, seguido de la natación 🏊‍♂️ y la pesca 🎣.
-    - **Frecuencia de Ataques por Océano**: los océanos con más ataques de tiburones son el Océano Pacífico 🌊, el Océano Atlántico 🌊 y el Océano Índico 🌊.
-    - **Distribución Temporal de los Ataques**: la mayoría de los ataques de tiburones ocurren en la tarde 🌅, seguidos por la mañana 🌄 y finalmente por la noche 🌃.
-    - **Países**: los países con más ataques de tiburones son Estados Unidos 🇺🇸, Australia 🇦🇺 y Sudáfrica 🇿🇦, probablemente debido a la mayor prevalencia de actividades como el surf y la natación en estas regiones.
+    - **Age**: The age range most affected by shark attacks is 21-30 years. This is likely because this age group participates in more water activities. 🏄‍♂️
+    - **Gender**: 86.5% of shark attacks are on men, making them the highest-risk group. 👨
+    - **High-Risk Activities**: The activities with the highest risk of shark attacks are surfing 🏄‍♂️, followed by swimming 🏊‍♂️ and fishing 🎣.
+    - **Frequency of Attacks by Ocean**: The oceans with the most shark attacks are the Pacific Ocean 🌊, the Atlantic Ocean 🌊, and the Indian Ocean 🌊.
+    - **Temporal Distribution of Attacks**: Most shark attacks occur in the afternoon 🌅, followed by the morning 🌄 and finally at night 🌃.
+    - **Countries**: The countries with the most shark attacks are the United States 🇺🇸, Australia 🇦🇺, and South Africa 🇿🇦, likely due to the higher prevalence of activities such as surfing and swimming in these regions.
     """)
 
-elif menu == 'Recomendaciones':
-    st.header('Recomendaciones 📋')
+elif menu == 'Recommendations':
+    st.header('Recommendations 📋')
     st.write("""
-    Basado en el análisis, se proponen las siguientes recomendaciones:
+    Based on the analysis, the following recommendations are proposed:
 
-    1. **Aumentar la Conciencia y las Medidas de Seguridad**: 
-       - 📢 Dirigir información y pautas de seguridad a grupos de alto riesgo, como surfistas y nadadores.
-       - 🦈 Implementar y promover el uso de dispositivos de disuasión de tiburones en áreas de alto riesgo.
+    1. **Increase Awareness and Safety Measures**: 
+       - 📢 Direct information and safety guidelines to high-risk groups, such as surfers and swimmers.
+       - 🦈 Implement and promote the use of shark deterrent devices in high-risk areas.
 
-    2. **Precauciones Estacionales y Basadas en el Tiempo**: 
-       - 📅 Aumentar la vigilancia y las medidas de seguridad durante los meses de mayor incidencia de ataques (julio, enero, agosto y septiembre) y las horas del día (por la tarde).
-       - 🚫 Alentar a los bañistas a evitar nadar durante los momentos de alto riesgo.
+    2. **Seasonal and Time-Based Precautions**: 
+       - 📅 Increase surveillance and safety measures during months with higher incidence of attacks (July, January, August, and September) and times of the day (afternoon).
+       - 🚫 Encourage swimmers to avoid swimming during high-risk times.
 
-    3. **Enfoque Geográfico**: 
-       - 🌍 Enfocar las campañas de seguridad y los recursos en las regiones con el mayor número de ataques, como América del Norte, Oceanía y África.
-       - 🤝 Colaborar con las autoridades locales en estas regiones para mejorar la vigilancia y las estrategias de respuesta ante tiburones.
+    3. **Geographic Focus**: 
+       - 🌍 Focus safety campaigns and resources on regions with the highest number of attacks, such as North America, Oceania, and Africa.
+       - 🤝 Collaborate with local authorities in these regions to improve shark surveillance and response strategies.
 
-    4. **Investigación Adicional**: 
-       - 🔬 Realizar más estudios para comprender los factores subyacentes que contribuyen al alto número de ataques en regiones y actividades específicas.
-       - 🌐 Explorar el impacto de los cambios ambientales en el comportamiento de los tiburones y los patrones de ataque.
+    4. **Additional Research**: 
+       - 🔬 Conduct further studies to understand the underlying factors contributing to the high number of attacks in specific regions and activities.
+       - 🌐 Explore the impact of environmental changes on shark behavior and attack patterns.
     """)
+
+elif menu == 'Power BI':
+    st.header('Power BI 📊')
+    st.write("Below are some Power BI visualizations related to the shark data analysis.")
+    
+    # Add Power BI images
+    power_bi_image1_path = os.path.join(os.path.dirname(__file__), 'images', 'power_bi_image1.png')
+    power_bi_image2_path = os.path.join(os.path.dirname(__file__), 'images', 'power_bi_image2.png')
+    
+    if os.path.exists(power_bi_image1_path):
+        st.image(power_bi_image1_path, caption='Power BI Visualization 1')
+    else:
+        st.error(f"Could not find the image: {power_bi_image1_path}")
+    
+    if os.path.exists(power_bi_image2_path):
+        st.image(power_bi_image2_path, caption='Power BI Visualization 2')
+    else:
+        st.error(f"Could not find the image: {power_bi_image2_path}")
+    
+    # Add Power BI video
+    st.video('https://www.youtube.com/watch?v=your_video_id')
