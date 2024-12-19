@@ -77,6 +77,7 @@ elif menu == 'Development Process':
     - **Interactive Charts**: Interactive charts were created using tools like Matplotlib and Seaborn to facilitate data exploration.
     - **Dashboards**: Interactive dashboards were developed with Streamlit to allow users to visualize and analyze data intuitively.
     - **Geospatial Maps**: Geospatial mapping tools were used to visualize the geographic distribution of shark attacks.
+    - **Power BI**: We also created Power BI visualizations to provide interactive and insightful dashboards. 
 
     ### 5. Reporting 📝
     - **Documentation of Results**: The findings of the data analysis were documented in detailed reports.
