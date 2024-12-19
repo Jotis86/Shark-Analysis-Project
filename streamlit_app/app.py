@@ -29,7 +29,8 @@ if os.path.exists(sidebar_image_path):
     st.sidebar.image(sidebar_image_path, caption='Navigation Menu')
 
 # Button to go to the GitHub repository
-st.sidebar.markdown("[Go to GitHub Repository](https://github.com/Jotis86/Shark-Analysis-Project)")
+if st.sidebar.button('Go to GitHub Repository'):
+    st.sidebar.markdown("[GitHub Repository](https://github.com/Jotis86/Shark-Analysis-Project)")
 
 menu = st.sidebar.radio('Select a section:', ['Project Objectives', 'Development Process', 'Visualizations', 'Power BI', 'Final Conclusions', 'Recommendations'])
 
