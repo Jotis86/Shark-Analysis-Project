@@ -14,10 +14,6 @@ df_cleaned = load_data()
 # Application title
 st.title('Shark Data Analysis')
 
-# Description
-st.write("""
-This application displays the charts and conclusions of the shark data analysis.
-""")
 
 # Add image to the main page
 main_image_path = os.path.join(os.path.dirname(__file__), 'images', 'nemo.jpg')
