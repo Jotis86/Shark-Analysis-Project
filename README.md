@@ -50,6 +50,27 @@ The analysis revealed several interesting patterns in shark attack data, includi
 
 For a detailed summary of the data analysis, including visualizations and key insights, please refer to the [Summary Report](https://github.com/GemaVNZ/Quest2.-Sharks/blob/main/reports/sumary_report.md).
 
+## Power BI 📊
+
+Below are some Power BI visualizations related to the shark data analysis. 📊
+
+Power BI provides powerful tools for data visualization and analysis, allowing us to create interactive and insightful dashboards. 📈
+
+In this section, you will find:
+
+📊 **Interactive Charts**: Explore various charts that provide insights into shark attack data.
+🌍 **Geospatial Analysis**: Visualize the geographic distribution of shark attacks.
+📅 **Temporal Trends**: Analyze how shark attacks vary over time.
+🦈 **Species Insights**: Gain insights into the most common shark species involved in attacks.
+
+These visualizations help us understand the data better and make informed decisions to improve safety measures. 🛡️
+
+### Power BI Visualization 1
+![Power BI Visualization 1](images/picture_1.png)
+
+### Power BI Visualization 2
+![Power BI Visualization 2](images/picture_2.png)
+
 ## Project Structure 📁
 
 - `assets/`: 
