@@ -35,12 +35,13 @@ if os.path.exists(sidebar_image_path):
 # Button to go to the GitHub repository
 st.sidebar.markdown("[Go to GitHub Repository](https://github.com/Jotis86/Shark-Analysis-Project)")
 
-menu = st.sidebar.radio('Select a section:', ['Project Objectives', 'Development Process', 'Visualizations', 'Final Conclusions', 'Recommendations', 'Power BI'])
+menu = st.sidebar.radio('Select a section:', ['Project Objectives', 'Development Process', 'Visualizations', 'Power BI', 'Final Conclusions', 'Recommendations'])
 
 if menu == 'Project Objectives':
     st.header('Project Objectives 🎯')
     st.write("""
     The main objective of this project is to analyze and visualize shark attack data to gain insights into patterns and trends. 📊
+    
     
     1. **Identification of Temporal Patterns**: Analyze how shark attacks vary over time, including seasonal and diurnal variations.
     2. **Geographic Analysis**: Determine the regions with the highest incidence of shark attacks and explore possible geographic factors contributing to these patterns.
@@ -114,6 +115,27 @@ elif menu == 'Visualizations':
         else:
             st.error(f"Could not find the image: {image_path}")
 
+elif menu == 'Power BI':
+    st.header('Power BI 📊')
+    st.write("Below are some Power BI visualizations related to the shark data analysis.")
+    
+    # Add Power BI images
+    power_bi_image1_path = os.path.join(os.path.dirname(__file__), 'images', 'power_bi_image1.png')
+    power_bi_image2_path = os.path.join(os.path.dirname(__file__), 'images', 'power_bi_image2.png')
+    
+    if os.path.exists(power_bi_image1_path):
+        st.image(power_bi_image1_path, caption='Power BI Visualization 1')
+    else:
+        st.error(f"Could not find the image: {power_bi_image1_path}")
+    
+    if os.path.exists(power_bi_image2_path):
+        st.image(power_bi_image2_path, caption='Power BI Visualization 2')
+    else:
+        st.error(f"Could not find the image: {power_bi_image2_path}")
+    
+    # Add Power BI video
+    st.video('https://www.youtube.com/watch?v=your_video_id')
+
 elif menu == 'Final Conclusions':
     st.header('Final Conclusions 📊')
     st.write("""
@@ -146,24 +168,3 @@ elif menu == 'Recommendations':
        - 🔬 Conduct further studies to understand the underlying factors contributing to the high number of attacks in specific regions and activities.
        - 🌐 Explore the impact of environmental changes on shark behavior and attack patterns.
     """)
-
-elif menu == 'Power BI':
-    st.header('Power BI 📊')
-    st.write("Below are some Power BI visualizations related to the shark data analysis.")
-    
-    # Add Power BI images
-    power_bi_image1_path = os.path.join(os.path.dirname(__file__), 'images', 'power_bi_image1.png')
-    power_bi_image2_path = os.path.join(os.path.dirname(__file__), 'images', 'power_bi_image2.png')
-    
-    if os.path.exists(power_bi_image1_path):
-        st.image(power_bi_image1_path, caption='Power BI Visualization 1')
-    else:
-        st.error(f"Could not find the image: {power_bi_image1_path}")
-    
-    if os.path.exists(power_bi_image2_path):
-        st.image(power_bi_image2_path, caption='Power BI Visualization 2')
-    else:
-        st.error(f"Could not find the image: {power_bi_image2_path}")
-    
-    # Add Power BI video
-    st.video('https://www.youtube.com/watch?v=your_video_id')
