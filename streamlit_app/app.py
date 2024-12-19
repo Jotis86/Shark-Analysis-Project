@@ -20,7 +20,7 @@ This application displays the charts and conclusions of the shark data analysis.
 """)
 
 # Add image to the main page
-main_image_path = os.path.join(os.path.dirname(__file__), 'images', 'nemo.png')
+main_image_path = os.path.join(os.path.dirname(__file__), 'images', 'nemo.jpg')
 if os.path.exists(main_image_path):
     st.image(main_image_path, caption='Shark Data Analysis')
 
