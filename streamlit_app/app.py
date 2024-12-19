@@ -134,7 +134,11 @@ elif menu == 'Power BI':
         st.error(f"Could not find the image: {power_bi_image2_path}")
     
     # Add Power BI video
-    st.video('https://www.youtube.com/watch?v=your_video_id')
+    power_bi_video_path = os.path.join(os.path.dirname(__file__), 'images', 'clip.mp4') 
+    if os.path.exists(power_bi_video_path): 
+        st.video(power_bi_video_path) 
+    else: st.error(f"Could not find the video: {power_bi_video_path}")
+
 
 elif menu == 'Final Conclusions':
     st.header('Final Conclusions 📊')
