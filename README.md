@@ -66,10 +66,10 @@ In this section, you will find:
 These visualizations help us understand the data better and make informed decisions to improve safety measures. 🛡️
 
 ### Power BI Visualization 1
-![Power BI Visualization 1](images/picture_1.png)
+![Power BI Visualization 1](powerbi/picture_1.png)
 
 ### Power BI Visualization 2
-![Power BI Visualization 2](images/picture_2.png)
+![Power BI Visualization 2](powerbi/picture_2.png)
 
 ## Project Structure 📁
 
