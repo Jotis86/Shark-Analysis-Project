@@ -114,7 +114,19 @@ elif menu == 'Visualizations':
 
 elif menu == 'Power BI':
     st.header('Power BI 📊')
-    st.write("Below are some Power BI visualizations related to the shark data analysis.")
+    st.write("""
+    Below are some Power BI visualizations related to the shark data analysis. 📊
+
+    Power BI provides powerful tools for data visualization and analysis, allowing us to create interactive and insightful dashboards. 📈
+
+    In this section, you will find:
+    - 📊 **Interactive Charts**: Explore various charts that provide insights into shark attack data.
+    - 🌍 **Geospatial Analysis**: Visualize the geographic distribution of shark attacks.
+    - 📅 **Temporal Trends**: Analyze how shark attacks vary over time.
+    - 🦈 **Species Insights**: Gain insights into the most common shark species involved in attacks.
+
+    These visualizations help us understand the data better and make informed decisions to improve safety measures. 🛡️
+    """)
     
     # Add Power BI images
     power_bi_image1_path = os.path.join(os.path.dirname(__file__), 'images', 'picture_1.png')
